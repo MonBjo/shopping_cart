@@ -1,0 +1,22 @@
+article {
+  padding: 20px;
+  border-radius: 3px;
+  width: 250px;
+  background-color: white;
+  box-shadow: 5px 5px 5px rgb(24, 24, 24);
+}
+
+h2,h3 {
+  margin: 0;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: rgb(54, 38, 110);
+}
+
+button {
+  padding: 20px;
+  color: white;
+  font-weight: 900;
+  background-color: rgb(97, 196, 196);
+  border-radius: 3px;
+  border: 0px solid white;
+}

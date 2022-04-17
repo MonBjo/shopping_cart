@@ -1,70 +1,44 @@
-# Getting Started with Create React App
+# Shopping cart övning
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Steg 1
+*[Lektion 29 mars](https://github.com/F21-Frontendramverk/lektion-29-mars)*
 
-## Available Scripts
+I denna övning ska du göra en React-applikationen enligt designen som du kan på bilden nedanför (du kan skippa bilden på Sherlock). Denna sida kommer i denna övning vara statisk d.v.s. du kan hårdkoda all information och knapparna etc behöver inte göra något. Vi kommer återvända till denna övning och fixa det senare.
 
-In the project directory, you can run:
+Följande komponenter bör finnas med:
+* App
+* Header
+* Cart (som ligger i Header)
+* Product
 
-### `npm start`
+Komponenten **Product** ska ta följande som props:
+* Boktitel
+* Författare
+* Kort text om boken (kan vara Lorem Ipsum)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Steg 2
+*[Lektion 4 april](https://github.com/F21-Frontendramverk/lektion-4-april)*
 
-### `npm test`
+Gör om så din shopping cart loopar ut dina produkter. Du behöver lägga alla produkter i en array.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## Steg 3
+*[Lektion 5 april](https://github.com/F21-Frontendramverk/lektion-5-april)*
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+lägg till funktionalitet så att när en användare klickar på **Add to cart** ska produkten läggas till och cart-ikonen uppdateras med 1.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Här behöver du använd React-hooken ```useState``` som håller ditt state med antal produkter.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Level up
 
-### `npm run eject`
+* Utöka cart-componenten så att den förutom visar antal produkter i varukorgen även visar vilka som är tillagda.
+* Lägg till funktionalitet så det enbart går att lägga en produkt en gång.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+--- 
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Skiss
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+![Screenshot](https://user-images.githubusercontent.com/54267140/108186450-aca5e980-710d-11eb-95cf-2a3e79ed3bcd.png)
